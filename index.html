@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-SHOP</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.png" type="image/png">
+    <!-- Style -->
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Font  awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="image/favicon.png" alt="" class="img-fluid w-50">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Acceuil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#boutique">Mon boutique</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+                <div class="profilUser d-flex">
+                  <div class="dropdown mx-2" id="user">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa-solid fa-user" id="user"></i> <span>Mon profile</span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="signup.html">Créer votre compte</a></li>
+                      <li><a class="dropdown-item" href="signin.html">Se connecter</a></li>
+                    </ul>
+                  </div>
+                  
+                  <button class="btn-Search" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- End header -->
+    <section>
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasTopLabel">Recherche dans boutique</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="" id="btn-Search" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Section owl-carousel Start   -->
+    <section id="owlCarouselPhoto">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="image/owlcarousel/1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/owlcarousel/2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="image/owlcarousel/3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+   </section>
+   <!-- Section owl-carousel End -->
+   <!-- Section -->
+   <section class="Promotion mb-4">
+    <div class="container">
+      <h1 class="text-center mb-3" data-aos="zoom-in" data-aos-duration="3000">Produit en Promotion</h1>
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-6 my-2" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+          <div class="box border border-1">
+            <div class="promo">
+              <h6 class="m-2">En Promo</h6>
+            </div>
+            <div class="image">
+              <img src="image/pc/PC1.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="content mt-2">
+              <h6 class="mx-2">PC PORTABLE ACER 15-DW3060NK I5 11GÉN 8GO/256GO SSD GRIS</h6>
+              <div class="d-flex justify-content-between">
+                <h5 class="mx-2">Acer</h5>
+                <Strong class="mx-2">1450 TND</Strong>
+              </div>
+            </div>
+            <div class="text-center mb-2">
+              <button class="button-1">Acheter</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6  my-2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+          <div class="box border border-1">
+            <div class="promo">
+              <h6 class="m-2">En Promo</h6>
+            </div>
+            <div class="image">
+              <img src="image/pc/PC2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="content mt-2">
+              <h6 class="mx-2">PC PORTABLE HP PROBOOK 450 G8 I7 11GEN 8GO/512GO SSD SILVER</h6>
+              <div class="d-flex justify-content-between">
+                <h5 class="mx-2">HP</h5>
+                <Strong class="mx-2">2900 TND</Strong>
+              </div>
+            </div>
+            <div class="text-center mb-2">
+              <button class="button-1">Acheter</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 my-2"data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">
+          <div class="box border border-1">
+            <div class="promo">
+              <h6 class="m-2">En Promo</h6>
+            </div>
+            <div class="image text-center">
+              <img src="image/pc/PC3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="content mt-2">
+              <h6 class="mx-2">CONSOLE PLAYSTATION PS4 PRO 1TO NOIR</h6>
+              <div class="d-flex justify-content-between">
+                <h5 class="mx-2">Sony</h5>
+                <Strong class="mx-2">1525 TND</Strong>
+              </div>
+            </div>
+            <div class="text-center mb-2">
+              <button class="button-1">Acheter</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6  my-2" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="900">
+          <div class="box border border-1">
+            <div class="promo">
+              <h6 class="m-2">En Promo</h6>
+            </div>
+            <div class="image">
+              <img src="image/pc/PC4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="content mt-2">
+              <h6 class="mx-2 text-uppercase">Apple iPad 8é Génération 10.2 32Go WiFi</h6>
+              <div class="d-flex justify-content-between">
+                <h5 class="mx-2">Apple</h5>
+                <Strong class="mx-2">1659 TND</Strong>
+              </div>
+            </div>
+            <div class="text-center mb-2">
+              <button class="button-1">Acheter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Section -->
+
+   <!-- Article Start -->
+   <section class="services" id="services">
+    <div class="container">
+      <h1 class="text-center mb-4" data-aos="zoom-in" data-aos-duration="3000">Notre Services</h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-12" data-aos="fade-up-right" data-aos-duration="2000" data-aos-delay="300">
+            <div class="box border border-1 rounded-1 m-1">
+              <div class="image text-center">
+                <img src="image/services/services_3.jpg" alt="" class="img-fluid w-25 my-4">
+              </div>
+              <div class="content">
+                <h3 class="text-center">Service 24/24 7/7</h3>
+                <p class="mx-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, molestias. Ab debitis pariatur assumenda distinctio!</p>
+              </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 col-12" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+          <div class="box border border-1 rounded-1 m-1">
+            <div class="image text-center">
+              <img src="image/services/services_2.jpg" alt="" class="img-fluid w-25 my-4">
+            </div>
+            <div class="content">
+              <h3 class="text-center">Service rapide</h3>
+              <p class="mx-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, molestias. Ab debitis pariatur assumenda distinctio!</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 col-12" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="300">
+        <div class="box border border-1 rounded-1 m-1">
+          <div class="image text-center">
+            <img src="image/services/services_1.jpg" alt="" class="img-fluid w-25 my-4">
+          </div>
+          <div class="content">
+            <h3 class="text-center">Service aprés vente</h3>
+            <p class="mx-3 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, molestias. Ab debitis pariatur assumenda distinctio!</p>
+          </div>
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- Article End -->
+
+   <!-- mark start-->
+   <section class="marque my-5" id="marque">
+    <div class="container">
+      <h1  class="text-center mb-3" data-aos="zoom-in" data-aos-duration="3000">Top marques</h1>
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="image">
+            <img src="image/marques/marque1.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="image">
+            <img src="image/marques/marque2.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="image">
+            <img src="image/marques/marque3.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="image">
+            <img src="image/marques/marque4.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="image">
+            <img src="image/marques/marque5.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+          <div class="image">
+            <img src="image/marques/marque6.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- mark end-->
+   <!-- boutique start -->
+   <section id="boutique" class="boutique">
+    <div class="container">
+      <h1 class="text-center" data-aos="zoom-in" data-aos-duration="3000">Boutique</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, harum esse quod, exercitationem id adipisci ducimus eum in nam unde repellat, iusto provident nobis facere eveniet modi dolores obcaecati! Laborum et facere ullam harum.</p>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-1">
+        <div class="box border border-1 rounded-3">
+          <div class="image my-2">
+            <img src="image/boutique/boutique1.png" alt="" class="img-fluid">
+          </div>
+          <h5 class="mx-2">PC HP PRO G2</h5>
+          <span class="mx-2">Référence : 6BD97EA</span>
+          <p class="mx-2">Prix : <strong>1500 TND</strong></p> 
+          <div class="d-flex mx-2 mb-3">
+            <button class="button-1 w-75">Acheter</button>
+            <button class="button-1" style="margin-left: 10px;"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-1">
+        <div class="box border border-1 rounded-3">
+          <div class="image my-2">
+            <img src="image/boutique/boutique2.jpg" alt="" class="img-fluid">
+          </div>
+          <h5 class="mx-2">PC GAMER</h5>
+          <span class="mx-2">Référence : SP-23</span>
+          <p class="mx-2">Prix : <strong>2900 TND</strong></p> 
+          <div class="d-flex mx-2 mb-3">
+            <button class="button-1 w-75">Acheter</button>
+            <button class="button-1" style="margin-left: 10px;"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-1">
+        <div class="box border border-1 rounded-3">
+          <div class="image my-2">
+            <img src="image/boutique/boutique3.png" alt="" class="img-fluid">
+          </div>
+          <h5 class="mx-2">Samsung Z Fold 2</h5>
+          <span class="mx-2">Référence : SM-Z-Bk</span>
+          <p class="mx-2">Prix : <strong>7199 TND</strong></p> 
+          <div class="d-flex mx-2 mb-3">
+            <button class="button-1 w-75">Acheter</button>
+            <button class="button-1" style="margin-left: 10px;"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-1">
+        <div class="box border border-1 rounded-3">
+          <div class="image my-2">
+            <img src="image/boutique/boutique4.jpg" alt="" class="img-fluid">
+          </div>
+          <h5 class="mx-2">APPLE WATCH</h5>
+          <span class="mx-2">Référence : M01/A</span>
+          <p class="mx-2">Prix : <strong>1589 TND</strong></p> 
+          <div class="d-flex mx-2 mb-3">
+            <button class="button-1 w-75">Acheter</button>
+            <button class="button-1" style="margin-left: 10px;"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-1">
+        <div class="box border border-1 rounded-3">
+          <div class="image my-2">
+            <img src="image/boutique/boutique5.jpg" alt="" class="img-fluid">
+          </div>
+          <h5 class="mx-2">APPLE AIRPODS</h5>
+          <span class="mx-2">Référence : MG13A</span>
+          <p class="mx-2">Prix : <strong>950 TND</strong></p> 
+            <div class="d-flex mx-2 mb-3">
+            <button class="button-1 w-75">Acheter</button>
+            <button class="button-1" style="margin-left: 10px;"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6 col-6 my-1">
+        <div class="box border border-1 rounded-3">
+          <div class="image my-2">
+            <img src="image/boutique/boutique6.jpg" alt="" class="img-fluid">
+          </div>
+          <h5 class="mx-2 text-uppercase">Manette Sans Fil</h5>
+          <span class="mx-2">Référence : M-PS4</span>
+          <p class="mx-2">Prix : <strong>300 TND</strong></p> 
+          <div class="d-flex mx-2 mb-3">
+            <button class="button-1 w-75">Acheter</button>
+            <button class="button-1" style="margin-left: 10px;"><i class="fa-solid fa-heart"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination d-flex justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <i class="fa-solid fa-angles-left"></i>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+   </section>
+   <!-- boutique end-->
+   <!--Contact start-->
+   <section id="contact" class="contact">
+    <div class="container">
+			<div class="row justify-content-center bg-light">
+				<div class="col-lg-10 col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-7 d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4 text-capitalize">Entrer en contact avec nous</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Votre message a été envoyé, merci !
+				      		</div>
+									<form method="POST" id="contactForm" name="contactForm">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-6"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Envoyer un message" class="button-1">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+              <div class="col-5 d-flex flex-column align-items-center justify-content-center icon_contact">
+                <div class="m-4">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+216 98 765 432</span>
+                </div>
+                <div class="m-4">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>ESHOP@gmail.com</span>
+                </div>
+                <div class="m-4">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>Korba, Tunisie</span>
+                </div>
+              </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+   </section>
+   <!--Contact end-->
+
+
+   <!-- newsletter start -->
+   <section id="newsletter" class="newsletter m-4" data-aos="fade-down-right" data-aos-duration="2000" data-aos-delay="300">
+    <div class="container">
+      <div class="row d-flex flex-column justify-content-center align-items-center">
+        <div class="col-md-8 col-lg-6 col-sm-12 col-12">
+          <div class="box border border-2 rounded-2">
+            <div class="content">
+              <h3 class="text-capitalize">Abonnez-vous à notre newsletter</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, explicabo doloremque tempore, aliquid nisi perferendis distinctio quisquam ea obcaecati expedita soluta, aspernatur repellendus eaque perspiciatis aperiam debitis labore qui quod a dolore minus! Tempora omnis et veritatis exercitationem.</p>
+            </div>
+            <div class="contentInput d-flex">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <button class="button-1 mx-2">Abonnez-vous</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+   <!-- newsletter end -->
+   <!-- footer start -->
+   <footer>
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="box text-center">
+          <div class="image"><img src="image/favicon.png" alt="" class="img-fluid w-25"></div>
+        </div>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia debitis aspernatur, hic impedit in id.</P>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+        <ul>
+          <li><a href="">Acceuil</a></li>
+          <li><a href="">Mon boutique</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+        <ul>
+          <li><a href="">Promotion</a></li>
+          <li><a href="">Créer un compte</a></li>
+          <li><a href="">Se connecter</a></li>
+          <li><a href="">Newsletter</a></li>
+        </ul>
+        
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 info">
+        <ul>
+          <li>Temps de travail :</li>
+          <p>De 8:00 à 23:00</p>
+          <li>Localisation :</li>
+          <p>korba Nabeul, Tunisie</p>
+          <li>Téléphone :</li>
+          <p>+216 98 765 432</p>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 scMedia ">
+        <ul class="d-flex justify-content-center">
+          <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>   
+
+  </footer>
+   <!-- foooter end -->
+   <section id="copyright" class="copyright w-100">
+      <div class="col-12 text-center pt-3">
+        <p>Tous droits réservés © 2022 MAHDI LAITH</p>
+      </div>
+    </div>
+   </section>
+    <!-- JS -->
+    <script src="JS/bootstrap.js"></script>
+    <script src="JS/script.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="JS/scJquery.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

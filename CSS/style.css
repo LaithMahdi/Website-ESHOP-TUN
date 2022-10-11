@@ -1,0 +1,483 @@
+:root{
+    --firstColor :#ce5c1c;
+    --secondColor: #213B85;
+    --darkColor: #000000;
+    --lightColor:#ffffff;
+    --pargColor: #666666;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    font-family: Poppins,sans-serif;
+}
+
+/* Start navbar */ 
+.navbar{
+    background-color: var(--firstColor);
+}
+.navbar .form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border: 2px solid var(--firstColor);
+}
+.navbar .nav-item .nav-link{
+    font-weight: 300;
+    color: var(--firstColor);
+    padding: 0px 15px;
+}
+.navbar .nav-item .nav-link:hover{
+    font-weight: 600;
+    color: var(--secondColor);
+    text-decoration: overline;
+    transition: 0.4s ease-in-out;
+}
+/* Creatation of search button */
+.btn-Search{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--firstColor);
+    border: none;
+    opacity: 0.9;
+    color: var(--lightColor);
+}
+#btn-Search{
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--firstColor);
+    border: none;
+    opacity: 0.9;
+    color: var(--lightColor);
+}
+.offcanvas{
+    height: 150px;
+}
+.offcanvas .btn-close:focus{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+/* CSS */
+.button-1 {
+  background-color: var(--secondColor);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  opacity: 0.5;
+}
+
+.button-1:hover,
+.button-1:focus {
+  opacity: 1;
+}
+#dropdownMenuButton1{
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: var(--firstColor);
+    border: none;
+    opacity: 0.9;
+    color: var(--lightColor);
+    cursor: pointer;
+}
+#dropdownMenuButton1 span{
+    font-size: 14px;
+    margin: 0px 5px;
+}
+.btn-Search:hover, #dropdownMenuButton1:hover{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+.dropdown-menu li a:focus{
+    background-color: var(--firstColor);
+    color: var(--lightColor);
+}
+.profilUser{
+    display: inline;
+}
+
+
+
+
+/* owl-carousel Start */
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+/* owl-carousel End */
+
+
+
+
+
+/* Promotion Section start */
+.Promotion{
+    background-color: #F5F5F5;
+    padding: 25px;
+}
+.promo{
+    margin: 10px 8px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 15px;
+    color: var(--lightColor);
+    text-align: center;
+    width: 40%;
+}
+.Promotion .box{
+    width: 100%;
+    height: 100%;
+    background-color: var(--lightColor);
+}
+.Promotion h1{
+    color: var(--secondColor);
+}
+/* Promotion Section end */
+
+
+
+
+/* Services start */
+.services h1{
+    color: var(--secondColor);
+}
+.services .container .row .col img{
+    z-index: -1;
+    position: absolute;
+    opacity: 0.5;
+}
+.services .container .box:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* Services End */ 
+
+
+
+
+/* marque start */
+.marque{
+    background-color: #F5F5F5;
+    padding: 25px;
+}
+.marque h1{
+    color: var(--secondColor);
+}
+.marque .image img{
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.marque .image img:hover{
+    opacity: 1;
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+/* marque end */
+
+
+
+
+/* boutique start  */
+.boutique .box{
+    width: 100%;
+    height: 100%;
+}
+.boutique h1{
+    color: var(--secondColor);
+}
+.boutique span{
+    font-size: 14px;
+    position: relative;
+    top: -7px;
+    color: var(--pargColor);
+}
+.boutique p{
+    margin-top: -7px;
+}
+.boutique ul li a{
+    padding: 10px 20px;
+    margin: 10px 0px;
+    color: var(--secondColor);
+}
+.boutique ul li a:hover , .boutique ul li a:focus{
+    color: var(--lightColor);
+    background-color: var(--secondColor);
+    outline: none;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+/* boutique end  */
+
+
+
+
+.form-control:focus {
+    border:2px solid var(--firstColor);
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+
+
+/* contact start */
+.contact{
+    padding: 50px 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.73)),url('../image/contact.jpg');
+}
+.contact h3{
+    color: var(--firstColor);
+}
+.contact .form-group{
+    margin: 5px 0px;
+}
+.icon_contact{
+    background-color: var(--firstColor);
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.icon_contact i{
+    font-size: 25px;
+    color: var(--lightColor);
+    margin: 10px 5px;
+}
+.icon_contact span{
+    color: var(--darkColor);
+}
+/* contact end */
+
+
+
+
+
+/* newsletter start */
+
+.newsletter h3{
+    color: var(--firstColor);
+    text-align: center;
+}
+.newsletter p{
+    text-align: justify;
+    color: var(--pargColor);
+}
+.newsletter .box{
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.newsletter .button-1{
+    width: 250px;
+    font-size: 15px;
+}
+/* newsletter end */
+
+
+
+
+/* footer start */
+footer{
+    background-color: #F5F5F5;
+    padding: 25px;
+}
+footer p{
+    color: var(--pargColor);
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li{
+    margin: 15px 0px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: var(--firstColor);
+    margin: 0px 5px;
+}
+footer ul li a:hover, footer ul li a:focus{
+    font-weight: 600;
+    color: var(--firstColor);
+    text-decoration: overline;
+    transition: 0.4s ease-in-out;
+}
+footer .info ul li{
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+footer .info ul p{
+    text-align: center;
+    color: var(--darkColor);
+}
+footer .scMedia ul li a{
+    background-color: var(--secondColor);
+    color: var(--lightColor);
+    padding: 8px 13px;
+    font-size: 22px;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+footer .scMedia ul li a:hover{
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+/* footer end */
+
+
+
+
+
+
+.copyright{
+    background-color: var(--lightColor);
+} 
+
+
+
+
+/* Sign Page*/
+#Sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#Sign .box{
+    width: 500px;
+    padding: 30px;
+    background-color: var(--lightColor);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#Sign h3{
+    color: var(--firstColor);
+}
+/* Sign page End */
+
+
+
+/* return btn start*/
+#return i{
+    font-size: 25px;
+    color: var(--pargColor);
+}
+#return i:hover, #return i:focus{
+    color: var(--darkColor);
+}
+/* return btn  end*/
+
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px){
+    .navbar .nav-item .nav-link{
+        padding: 10px 15px;
+    }
+    .promo{
+        padding: 2px;
+        width: 50%;
+    }
+    .promo h6{
+        font-size: 13px;
+    }
+    .newsletter .box{
+        padding: 25px;
+    }
+    .newsletter p{
+        font-size: 12px;
+    }
+    .newsletter h3{
+        font-size: 16px;
+    }
+    .newsletter .button-1{
+        width: 200px;
+        font-size: 12px;
+    }
+    footer .scMedia ul li a{
+        padding: 7px 10px;
+        font-size: 14px;
+        border-radius: 50px;
+    }
+    .icon_contact{
+        width: 100%;
+    }
+    #Sign .box{
+        width: 400px;
+        padding: 25px;
+    }
+    footer ul li a{
+        font-size: 15px;
+    }
+    footer .info ul li:nth-child(1){
+        font-size: 15px;
+    }
+    footer .info ul li:nth-child(2){
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 950px) {
+    .navbar .nav-item .nav-link{
+        padding: 15px 15px;
+    }
+    .promo{
+        width: 60%;
+        padding: 2px;
+    }
+    .promo h6{
+        font-size: 10spx;
+    }
+    .newsletter .box{
+        padding: 30px;
+    }
+    .newsletter p{
+        font-size: 14px;
+    }
+    .newsletter h3{
+        font-size: 20px;
+    }
+    .newsletter .button-1{
+        width: 200px;
+        font-size: 13px;
+    }
+    .icon_contact{
+        width: 100%;
+    }
+}
